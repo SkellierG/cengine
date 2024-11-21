@@ -1,10 +1,7 @@
 #!/bin/bash
-
-# Name of the executable (you can change it according to your project)
 EXECUTABLE_LINUX="build/dist/linux/cengine_linux"
 EXECUTABLE_WINDOWS="build/dist/windows/cengine_windows.exe"
 
-# Main menu
 echo "=============================="
 echo "       Cengine Build Tool      "
 echo "=============================="

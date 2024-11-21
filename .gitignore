@@ -1,4 +1,5 @@
 build/
 makefile.bak
 compile_commands.json
+.cache/
 
