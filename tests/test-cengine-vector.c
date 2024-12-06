@@ -1,8 +1,4 @@
 #include "../src/vectors/cengine-vector.h"
-#include "../src/vectors/cengine-ivec.h"
-#include "../src/vectors/cengine-vec2.h"    
-#include "../src/vectors/cengine-vec3.h"   
-#include "../src/vectors/cengine-vec4.h" 
 
 static void test_vec2_creation() {
     CengineVec2 *vec2 = cengine_vec2_new(1.0, 2.0);

@@ -1,5 +1,25 @@
 #include "cengine-ivec.h"
 
+
+GType cengine_ivec_get_type(void) {
+    static GType type = 0;
+    if (type == 0) {
+        static const GTypeInfo info = {
+            sizeof(CengineIVecInterface),
+            NULL,
+            NULL,
+            (GClassInitFunc)NULL,
+            NULL,
+            NULL,
+            sizeof(CengineIVecInterface),
+            0,
+            (GInstanceInitFunc)NULL
+        };
+        type = g_type_register_static(G_TYPE_OBJECT, "CengineIVec", &info, 0);
+    }
+    return type;
+}
+
 void cengine_ivec_reset(GObject *self) {
     CengineIVecInterface *iface = CENGINE_IVEC_GET_IFACE(self);
     g_return_if_fail(iface->reset != NULL);

@@ -1,8 +1,8 @@
 #ifndef CENGINE_IVEC_H
 #define CENGINE_IVEC_H
 
-#include <glib-object.h>
-#include <glib.h>
+#include <glib-2.0/glib-object.h>
+#include <glib-2.0/glib.h>
 
 typedef struct _CengineVec2 CengineVec2;
 typedef struct _CengineVec3 CengineVec3;
